@@ -1,4 +1,4 @@
-# Python program for implementation of MergeSort
+# Merges
 
 # Merges two subarrays of arr[].
 # First subarray is arr[l..m]
@@ -69,3 +69,39 @@ mergeSort(arr, 0, n - 1)
 print ("\n\nSorted array is")
 for i in range(n):
     print ("%d" % arr[i]),
+#
+# def countInversions(arr):
+#     lcount = 0
+#     rcount = 0
+#     count = 0
+#     blist = []
+#     if len(arr) > 1:
+#         mid = len(arr) // 2
+#         lhalf = arr[:mid]
+#         rhalf = arr[mid:]
+#         lcount = countInversions(lhalf)
+#         rcount = countInversions(rhalf)
+#         i = 0
+#         j = 0
+#
+#         while i < len(lhalf) and j < len(rhalf):
+#             if lhalf[i] <= rhalf[j]:
+#                 blist.append(lhalf[i])
+#                 i += 1
+#             else:
+#                 blist.append(rhalf[j])
+#                 j += 1
+#                 count += len(lhalf[i:])
+#         while i < len(lhalf):
+#             blist.append(lhalf[i])
+#             i += 1
+#         while j < len(rhalf):
+#             blist.append(rhalf[j])
+#             j += 1
+#     else:
+#         blist = arr[:]
+#
+#     return blist
+#
+# array = [2, 1, 3, 1, 2]
+# countInversions(array)
